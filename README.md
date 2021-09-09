@@ -12,5 +12,5 @@ go build main.go
 
 ## Install Extension
 
-Open `chrome://extensions/` page in Chrome, and enable `Developer Mode`
-Drag-drop extension folder onto page
+- Open `chrome://extensions/` page in Chrome, and enable `Developer Mode`
+- Drag-drop extension folder onto page
