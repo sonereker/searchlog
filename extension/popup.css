@@ -1,0 +1,25 @@
+body {
+    font-family: apple-system, system-ui, Helvetica, Arial, sans-serif
+}
+
+h1 {
+    font-weight: normal;
+}
+
+div.ext {
+    display: block;
+    width: 300px;
+    height: 100px
+}
+
+div#result {
+    height: 30px
+}
+
+div.success {
+    color: green;
+}
+
+div.error {
+    color: red;
+}
