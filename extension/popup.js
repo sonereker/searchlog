@@ -25,17 +25,19 @@ function sendSearchResults() {
   let resultTitles = document.querySelectorAll('div#search div.g h3');
   let results = []
 
+  for (const title of resultTitles) {
+    if (title.innerText !== '') {
+      results.push({title: title.innerText})
+    }
+  }
+
   if (results.length === 0) {
     chrome.runtime.sendMessage({
       result: "Could not get results, are you sure you're in a search page?",
       className: 'error'
     });
-  }
 
-  for (const title of resultTitles) {
-    if (title.innerText !== '') {
-      results.push({title: title.innerText})
-    }
+    return
   }
 
   fetch(serverUrl + logServicePath, {
